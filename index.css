@@ -1,0 +1,138 @@
+
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(13, 32, 109, 0.879);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    width: 90%; /* Adjusted for small devices */
+    max-width: 750px;
+    height: 500px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    background-color: white;
+    gap: 35px;
+}
+
+.head {
+    margin-left: 4%;  
+    margin-top: 3%;  
+    gap: 8px;
+}
+
+.head h1 {
+    margin-bottom: 15px;
+    color: rgba(13, 32, 109, 0.879);
+}
+
+.head hr {
+    width: 90%;  
+    max-width: 690px;
+    border: 1px solid black;
+}
+
+.content {
+    width: 90%; 
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 400px;
+}
+
+#question {
+    margin-left: 4%;  
+    font-weight: bolder;
+    color: rgba(13, 32, 109, 0.879);
+}
+
+#answerdd {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#btn1,
+#btn2,
+#btn3,
+#btn4 {
+    margin-left: 4%;  
+    margin-top: 15px;
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    text-align: center;
+    padding-left: 7px;
+    height: 30px;
+    font-weight: 500;
+    color: black;
+    border: 2px solid black;
+}
+
+#btn1:hover,
+#btn2:hover,
+#btn3:hover,
+#btn4:hover {
+    background-color: black;
+    color: white;
+}
+
+#next-btn {
+    width: 79px;
+    height: 30px;
+    margin-left: 4%;  
+    margin-top: 15px;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: white;
+    text-align: center;
+}
+
+#next-btn:hover {
+    background-color: darkblue;
+    color: white;
+}
+
+/* Add media query for small devices */
+@media only screen and (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+
+    .box,
+    .head,
+    .content {
+        width: 100%;
+        max-width: none;
+    }
+
+    .head,
+    .head h1,
+    .head hr,
+    .content,
+    #question,
+    #answerdd,
+    #btn1,
+    #btn2,
+    #btn3,
+    #btn4,
+    #next-btn {
+        margin-left: 0;
+        margin-top: 0;
+    }
+}
